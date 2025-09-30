@@ -1,4 +1,5 @@
 # Tag-Jump Recommender
+
 This project was developed as part of the Advanced Data Analytics course at KU Leuven. Together with another student, I designed and implemented a recommender system that takes a different approach to game discovery. While most recommenders suggest similar games to what users already play, our goal was to break the filter bubble and encourage exploration of entirely new genres.
 
 We built the Tag-Jump Recommender, a system that uses community-generated tags as the foundation for recommendations. Instead of only suggesting what is already familiar, the system identifies “jump tags” — tags that are common in a user’s community cluster but absent from the user’s personal top preferences. These jump tags act as bridges to new genres, allowing the system to recommend games that feel fresh while still being relevant.
@@ -10,3 +11,5 @@ We applied unsupervised learning techniques to cluster users based on their tag 
 From there, we derived jump tags by comparing each user’s top tags with their cluster’s top tags, selecting those that did not overlap. For each jump tag, we identified the most popular games within the cluster that the user did not yet own. The result was a personalized list of ten recommended games per user, each grounded in community preferences but pointing toward unexplored directions.
 
 The implementation was carried out in Python, using networkx and matplotlib for visualizations and scikit-learn for clustering. Beyond the technical aspects, the project emphasized the importance of designing recommendation algorithms that do more than reinforce existing habits. By combining graph analytics, clustering, and creative use of tags, we were able to show how recommender systems can promote serendipity and discovery.
+
+For reproducibility, the executable Python notebook/script is included in this repository. However, the original dataset files are not provided here due to their large size. The code remains structured and documented so it can easily be adapted to similar datasets.
