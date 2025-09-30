@@ -1,0 +1,2 @@
+# Task_Graph_Analysis_on_Social_Network_Data_KULEUVEN
+Developed as part of a KU Leuven assignment on graph analytics, this project builds a novel game recommender system using community tags. Unlike traditional recommenders that only suggest similar games, our system introduces “jump tags”—genres that are popular among similar users but unexplored by the target user—helping break the filter bubble.
